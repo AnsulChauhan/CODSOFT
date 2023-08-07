@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MY Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="./style.css" />
+      <script src="https://kit.fontawesome.com/33cdfad611.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+      <nav>
+        <img src="./logoo.png" class="logo" />
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </nav>
+<!-- -----------Header section -->      
+      <div id="header">
+        <div class="container">
+          
+          
+          <div class="header-text">
+            <h1>
+              Hi, I'm <span>Ansul Chauhan</span><br />A
+              <span>Web Devloper</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+<!-- -----------end OF Header section -->
+<!-------------------------About  -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col1">
+              <img src="about.png" alt="pic" />
+            </div>
+            <div class="col2">
+              <h1>About me. . .</h1>
+              <p>
+               <br> Hi, I'm ANSUL Chauhan, a CSE student with a passion for web
+                development.<br>
+                <br>
+
+                Currently pursuing my B.Tech degree at JUIT, I enjoy diving into
+                front-end and back-end technologies to create seamless user
+                experiences.<br><br>
+
+                I seek to learn and grow in the ever-evolving tech world.<br><br>
+
+                My vision is to contribute to impactful projects and make a
+                difference through coding and innovative solutions.<br />
+
+                Beyond the code, I love reading novels , watching animes and
+                playing indoor and outdoor games.<br><br>
+                
+              </p>
+              <div class="tab-titles">
+              
+                <p class="tab-links active-link" onclick="opentab('experiences')">Experiences</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+                
+              <div class="tab-contents active-tab" id="experiences">
+                <UL>
+                    <li><span>2020-2021</span><BR>Worked at VOIP telecom services<li>
+                     
+                </UL>
+              </div>
+              <div class="tab-contents" id="education">
+                <UL>
+                    <li><span>2021-current</span><BR>B.tech from JUIT,Solan<li>
+                    <li><span>2020</span><BR>High-school from BAS,Vikasnagar<li>
+                    <li><span>2018</span><BR>Junior High-school from APS,kandrori<li>  
+                </UL>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+            }
+            
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+            
+        }
+      </script>
+ <!-----------------end of ABOUT  -->
+ <!-- ----------------Skills--------- -->
+
+ <div id="Skills">
+      <div class="container">
+        <h1 class="skill-section">My SKILLS</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-gears"></i>
+            <h2>Problem-Solving</h2>
+            <p>The act of defining a problem; determining the cause of the problem; identifying, prioritizing, and selecting alternatives for a solution; and implementing a solution. </p>
+            
+          </div>
+            <div><i class="fa-solid fa-code"></i>
+              <h2>Web-Devlopment</h2>
+              <p>Web development refers to the creating, building, and maintaining of websites.</p>
+              
+            </div>
+            <div>
+              <i class="fa-solid fa-database"></i>
+              <h2>MySQL</h2>
+              <p>MySQL is a relational database management system that uses SQL. SQL is primarily used to query and operate database systems</p>
+              
+            </div>
+            
+        </div> 
+
+      </div>
+
+ </div>
+ <!-- ------------end of My Skills -->
+ 
+ <!-- ------------My Projects----- -->
+ <div id="projects">
+    <div class="container">
+      <h1 class="sub-title"> My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="./shoe2.webp" alt="project">
+              <div class="layer">
+                <h2>Shoe Shoping site</h2>
+                <P>This website shows different types of website.On here you can buy all the shoes going in trend.</P>
+                <a href="#"><i class="fa-regular fa-boot"></i></a>
+              </div>
+          </div>
+        
+        
+          <div class="project">
+            <img src="./movie2.png" alt="project">
+            <div class="layer">
+              <h2>Movie Recommendation site</h2>
+              <P>This movie recommendation system website suggest you the perfect movie according to your mood</P>
+              <a href="#"><i class="fa-regular fa-boot"></i></a>
+            </div>
+             
+          </div>
+        
+        
+          <div class="project">
+            <img src="./chat.png" alt="project">
+            <div class="layer">
+              <h2>Chatting System</h2>
+              <P>This Application allows you to chat with anyone and     from anywhere.</P>
+              <a href="#"><i class="fa-regular fa-boot"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+<!-- ----------end of MY Project section -->
+
+<!-- ----------------Contact Section---- -->
+ </div>
+ <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <P><i class="fa-sharp fa-solid fa-paper-plane"></i> ansul000chauhan@gmail.com</P>
+          <P><i class="fa-solid fa-phone"></i>6397XXXXXX</P>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ansul.chauhan.3994"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://twitter.com/Ansul_Chauhan_"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.instagram.com/ansul_chauhan09/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ansul-chauhan09/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="./cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+          <div class="contact-right">
+           <form >
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+           </form>
+          
+          </div>
+
+        
+      </div>
+    </div>
+ </div>
+ <script>
+   var side_menu = document.getElementById("sidemenu");
+   function openmenu(){ 
+    side_menu.style.right = "0";
+
+   }
+   function closemenu(){
+    side_menu.style.right = "-200px";
+
+   }
+ </script>
+    </body>
+  </html>
+</html>
